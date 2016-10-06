@@ -9,30 +9,47 @@
 module.exports = function(grunt) {
 
   grunt.initConfig({
-    responsive_images: {
-      dev: {
-        options: {
-          engine: 'im',
-          sizes: [{
+    // responsive_images: {
+    //   dev: {
+    //     options: {
+    //       engine: 'im',
+    //       sizes: [{
+    //
+    //         width: '800px',
+    //         suffix: '',
+    //         quality: 70
+    //
+    //       }]
+    //     },
+    //
+    //     /*
+    //     You don't need to change this part if you don't change
+    //     the directory structure.
+    //     */
+    //     files: [{
+    //       expand: true,
+    //       src: ['*.{gif,jpg,png}'],
+    //       cwd: 'images_src/',
+    //       dest: 'images/'
+    //     }]
+    //   }
+    // },
 
-            width: '800px',
-            suffix: '',
-            quality: 70
-
-          }]
-        },
-
-        /*
-        You don't need to change this part if you don't change
-        the directory structure.
-        */
-        files: [{
-          expand: true,
-          src: ['*.{gif,jpg,png}'],
-          cwd: 'images_src/',
-          dest: 'images/'
-        }]
-      }
+    // Trying out respimg
+    respimg: {
+        default: {
+            options: {
+                widths: [
+                    800,
+                ]
+            },
+            files: [{
+                expand: true,
+                src: ['*.{gif,jpg,png}'],
+                cwd: 'images_src/',
+                dest: 'images/'
+            }]
+        }
     },
 
     /* Clear out the images directory if it exists */
