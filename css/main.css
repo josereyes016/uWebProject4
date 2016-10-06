@@ -13,17 +13,16 @@ I've left some boilerplate below for you.
 */
 
 body {
-
+  box-sizing: border-box;
 }
 
 article {
-
+  width: 50em;
 }
 
 h1 {
-
 }
 
 img {
-
+  max-width: 100%;
 }
