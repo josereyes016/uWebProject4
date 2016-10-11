@@ -29,3 +29,22 @@ h1 {
 img {
   max-width: 100%;
 }
+
+/*@import url("http://weloveiconfonts.com/api/?family=zocial");*/
+
+/* zocial */
+[class*="zocial-"]:before {
+  font-family: 'zocial', sans-serif;
+  padding-right: 5px;
+  color: black;
+  text-shadow: 2px 2px 1px #888;
+}
+
+.social {
+}
+
+.social a {
+  min-width: 48px;
+  text-decoration: none;
+  margin: 0 10px;
+}
