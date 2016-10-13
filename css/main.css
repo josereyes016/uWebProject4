@@ -30,14 +30,18 @@ img {
   max-width: 100%;
 }
 
+figcaption {
+  color: #A80;
+}
+
 /*@import url("http://weloveiconfonts.com/api/?family=zocial");*/
 
 /* zocial */
 [class*="zocial-"]:before {
   font-family: 'zocial', sans-serif;
-  padding-right: 5px;
+  padding-right: 10px;
   color: black;
-  text-shadow: 2px 2px 1px #888;
+  text-shadow: 2px 2px 1px #AAA;
 }
 
 .social {
